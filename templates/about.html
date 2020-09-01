@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="main">
+	<div class="title" id="title-about">
+		<h3 id="header-about">About</h3>
+		<h4>The project</h4>
+		<p>
+			This is a binary image classifier, categorizing <strong>chest X-rays</strong> of people as <strong>pneumonic</strong> or <strong>normal</strong>.
+			<br>
+			The prediction is done through a <strong>ConvNet</strong> trained on 5000+ images from a <a href="https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia?">Kaggle Dataset</a>. Managed to acheive <strong>0.83 recall, 0.91 precision and 0.87 f1-score</strong>. For detailed info on the model, see <a href="http://">this</a> file.
+			<br>
+			<br>
+			Integrated the model into a web app using <strong>Flask</strong>. Took this <a href="https://github.com/mtobeiyf/keras-flask-deploy-webapp">GitHub repo</a> as a reference, and modified and added functionality as per the model. Deployment is done through <strong>Heroku</strong>.
+			<br>
+			<br>
+			You can see the <a href="http://">souce code</a> uploaded on GitHub
+		</p>
+		<br>
+		<h4>Who we are</h4>
+		<p>
+			<strong>Naman Shah</strong> and <strong>Naman Mehta</strong>, IT undergrads studying in Mumbai, India.
+			<br>
+			<br>
+			<strong>Naman Shah</strong>: Deep Learning (tensorflow), backend dev (node, express, flask), frontend dev(Bootstrap, JS, jQuery), Problem Solving (C++, Python)
+			<br><i class="fab fa-github" style="font-size: 1.5em;"></i> <a href="https://github.com/namanshah01">namanshah01</a>
+			<br><i class="fab fa-linkedin" style="font-size: 1.5em;"></i> <a href="https://www.linkedin.com/in/namanshah01/">namanshah01</a>
+			<br>
+			<br>
+			<strong>Naman Mehta</strong>: Deep Learning (tensorflow), bash, C, C++, python, Problem Solving (C++, Python)
+			<br><i class="fab fa-github" style="font-size: 1.5em;"></i> <a href="https://github.com/shadyskies">shadyskies</a>
+			<br><i class="fab fa-linkedin" style="font-size: 1.5em;"></i> <a href="https://www.linkedin.com/in/namanmehta42/">namanmehta42</a>
+		</p>
+	</div>
+</div>
+
+{% endblock %}
